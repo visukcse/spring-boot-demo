@@ -1,1 +1,1 @@
-# This is spring boot repository with variaous demo projects
+# This is spring boot repository with various demo projects
