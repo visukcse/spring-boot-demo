@@ -59,6 +59,7 @@ public class H2Controller {
 
 	@PutMapping("/{id}/{designation}")
 	public ResponseEntity<H2Entity> update(@PathVariable Integer id, @PathVariable String designation) {
+		System.out.println("Designation: " + designation);
 		H2Entity entity = h2Service.findById(id).orElse(null);
 		if(entity==null) {
 			return ResponseEntity.notFound().build();
