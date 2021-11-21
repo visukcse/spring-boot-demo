@@ -1,36 +1,39 @@
-# This is spring boot repository with variaous demo projects
+# Requirements
+	Java 1.8
+	Spring boot 2.5.6
 
-# Flyway migration:
+# Flyway migration
 /spring-boot-h2-demo/src/main/resources/db/migration has two scripts
-	- First script creates 'H2ENTITY' table 
-	- Second script creates three records in 
 
-# How to access DB:
-http://localhost:8080/h2-console/
+	First script creates 'H2ENTITY' table 
+	Second script creates three records in 
 
-# How to consume:
-GET http://localhost:8080/employee/
-GET http://localhost:8080/employee/1
+# How to access DB
+	http://localhost:8080/h2-console/
 
-POST http://localhost:8080/employee/more
-[
+# How to consume
+	GET http://localhost:8080/employee/
+	GET http://localhost:8080/employee/1
+
+	POST http://localhost:8080/employee/more
+	[
+		{
+		"designation": "Student",
+		"firstName": "Latha",
+		"lastName": "K"
+		},
+		{
+		"designation": "Professor",
+		"firstName": "Jaya",
+		"lastName": "K"
+		}
+	]
+
+	POST http://localhost:8080/employee/
 	{
-	"designation": "Student",
-	"firstName": "Latha",
-	"lastName": "K"
-	},
-	{
-	"designation": "Professor",
-	"firstName": "Jaya",
-	"lastName": "K"
+	    "designation": "MD",
+	    "firstName": "Krishnan",
+	    "lastName": "P"
 	}
-]
-
-POST http://localhost:8080/employee/
-{
-    "designation": "MD",
-    "firstName": "Krishnan",
-    "lastName": "P"
-}
 
 
