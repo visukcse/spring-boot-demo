@@ -41,13 +41,11 @@ public class H2Controller {
 	
 	@PostMapping("/")
 	public H2Entity save(@RequestBody H2Entity entity) {
-		System.out.println("H2 new entity: " + entity);
 		return h2Service.save(entity);
 	}
 
 	@PostMapping("/more")
 	public List<H2Entity> saveAll(@RequestBody List<H2Entity> entities) {
-		System.out.println("H2 new entities: " + entities);
 		return h2Service.saveAll(entities);
 	}
 
@@ -59,7 +57,6 @@ public class H2Controller {
 
 	@PutMapping("/{id}/{designation}")
 	public ResponseEntity<H2Entity> update(@PathVariable Integer id, @PathVariable String designation) {
-		System.out.println("Designation: " + designation);
 		H2Entity entity = h2Service.findById(id).orElse(null);
 		if(entity==null) {
 			return ResponseEntity.notFound().build();
