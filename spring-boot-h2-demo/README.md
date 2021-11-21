@@ -1,8 +1,11 @@
+# spring-boot-h2-demo
+	Demo project of spring boot with fly way migration with h2 database.
+	
 # Requirements
 	Java 1.8
 	Spring boot 2.5.6
 
-# Flyway migration
+# Fly way migration
 /spring-boot-h2-demo/src/main/resources/db/migration has two scripts
 
 	First script creates 'H2ENTITY' table 
