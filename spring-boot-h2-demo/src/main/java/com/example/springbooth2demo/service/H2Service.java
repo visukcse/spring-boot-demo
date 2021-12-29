@@ -35,4 +35,8 @@ public class H2Service {
 		h2Repository.deleteById(id);
 	}
 
+	public List<H2Entity> findByDesignation(String designation) {
+		return h2Repository.findByDesignationIgnoreCase(designation);
+	}
+
 }

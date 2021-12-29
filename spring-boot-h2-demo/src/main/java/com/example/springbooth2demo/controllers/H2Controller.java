@@ -66,4 +66,11 @@ public class H2Controller {
 			return ResponseEntity.ok(entity);
 		}
 	}
+	
+	@GetMapping("/designation/{designation}")
+	public ResponseEntity<List<H2Entity>> getByDesignation(@PathVariable String designation){
+		List<H2Entity> entities = h2Service.findByDesignation(designation);
+		return ResponseEntity.ok(entities);
+		
+	}
 }

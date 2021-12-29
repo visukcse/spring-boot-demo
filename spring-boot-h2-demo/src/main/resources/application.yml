@@ -1,0 +1,7 @@
+server:
+   port: 9090
+
+flyway:
+   user: none
+   password: none
+   url: jdbc:h2:mem:testdb
