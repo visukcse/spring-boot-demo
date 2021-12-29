@@ -21,12 +21,12 @@
 	POST http://localhost:8080/employee/more
 	[
 		{
-		"designation": "Student",
+		"designation": "SystemEngineer",
 		"firstName": "Latha",
 		"lastName": "K"
 		},
 		{
-		"designation": "Professor",
+		"designation": "SeniorEngineer",
 		"firstName": "Jaya",
 		"lastName": "K"
 		}
@@ -42,5 +42,7 @@
 	PUT http://localhost:8080/employee/1/New-Desigantion
 
 	DELETE http://localhost:8080/employee/1
+	
+	GET http://localhost:8080/employee/designation/SystemEngineer
 
 
